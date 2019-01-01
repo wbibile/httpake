@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/httpake"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/httpake-client"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/hpake-server"/>
+	<classpathentry kind="lib" path="../lib/shared/bcpkix-jdk15on-160.jar"/>
+	<classpathentry kind="lib" path="../lib/shared/bcprov-ext-jdk15on-160.jar"/>
+	<classpathentry kind="lib" path="../lib/shared/bcprov-jdk15on-160.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/fluent-hc-4.5.6.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/httpclient-4.5.6.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/httpclient-cache-4.5.6.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/httpclient-win-4.5.6.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/httpcore-4.4.10.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/httpmime-4.5.6.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/jna-4.4.0.jar"/>
+	<classpathentry kind="lib" path="../lib/client/httpclient/jna-platform-4.4.0.jar"/>
+	<classpathentry kind="lib" path="../lib/server/servlet-api-3.1.jar"/>
+	<classpathentry kind="lib" path="../lib/test-only/jetty-http-9.4.11.v20180605.jar"/>
+	<classpathentry kind="lib" path="../lib/test-only/jetty-io-9.4.11.v20180605.jar"/>
+	<classpathentry kind="lib" path="../lib/test-only/jetty-security-9.4.11.v20180605.jar"/>
+	<classpathentry kind="lib" path="../lib/test-only/jetty-server-9.4.11.v20180605.jar" sourcepath="F:/source-attachments/jetty-server-9.4.11.v20180605-sources.jar"/>
+	<classpathentry kind="lib" path="../lib/test-only/jetty-servlet-9.4.11.v20180605.jar"/>
+	<classpathentry kind="lib" path="../lib/test-only/jetty-servlets-9.4.11.v20180605.jar"/>
+	<classpathentry kind="lib" path="../lib/test-only/jetty-util-9.4.11.v20180605.jar"/>
+	<classpathentry kind="lib" path="../lib/test-only/jetty-jndi-9.4.11.v20180605.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
