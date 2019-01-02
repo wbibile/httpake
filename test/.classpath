@@ -22,7 +22,7 @@
 	<classpathentry kind="lib" path="../lib/test-only/jetty-http-9.4.11.v20180605.jar"/>
 	<classpathentry kind="lib" path="../lib/test-only/jetty-io-9.4.11.v20180605.jar"/>
 	<classpathentry kind="lib" path="../lib/test-only/jetty-security-9.4.11.v20180605.jar"/>
-	<classpathentry kind="lib" path="../lib/test-only/jetty-server-9.4.11.v20180605.jar" sourcepath="F:/source-attachments/jetty-server-9.4.11.v20180605-sources.jar"/>
+	<classpathentry kind="lib" path="../lib/test-only/jetty-server-9.4.11.v20180605.jar"/>
 	<classpathentry kind="lib" path="../lib/test-only/jetty-servlet-9.4.11.v20180605.jar"/>
 	<classpathentry kind="lib" path="../lib/test-only/jetty-servlets-9.4.11.v20180605.jar"/>
 	<classpathentry kind="lib" path="../lib/test-only/jetty-util-9.4.11.v20180605.jar"/>

@@ -4,9 +4,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/httpake"/>
 	<classpathentry kind="lib" path="../lib/shared/bcpkix-jdk15on-160.jar"/>
-	<classpathentry kind="lib" path="../lib/shared/bcprov-ext-jdk15on-160.jar" sourcepath="F:/source-attachments/bcprov-jdk15on-160-src.zip"/>
+	<classpathentry kind="lib" path="../lib/shared/bcprov-ext-jdk15on-160.jar"/>
 	<classpathentry kind="lib" path="../lib/shared/bcprov-jdk15on-160.jar"/>
-	<classpathentry kind="lib" path="../lib/server/servlet-api-3.1.jar" sourcepath="F:/source-attachments/javax.servlet-api-3.1.0-sources.jar"/>
-	<classpathentry kind="lib" path="../lib/server/guava-22.0.jar" sourcepath="F:/source-attachments/guava-22.0-sources.jar"/>
+	<classpathentry kind="lib" path="../lib/server/servlet-api-3.1.jar"/>
+	<classpathentry kind="lib" path="../lib/server/guava-22.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
