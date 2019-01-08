@@ -172,7 +172,7 @@ public class AuthHandler
 		}
 		
 		// Combine the clients public-key and servers private-key to establish the Diffie-Hellmen shared secret.
-		BigInteger clientYValue = Utils.decodeBase64(publicKeyHeader);
+		BigInteger clientYValue = Utils.decodeBase64Unsigned(publicKeyHeader);
 		PublicKey clientPublicKey = serverPublicKeyDTO.derive(clientYValue).getPublicKey();
 		byte[] secret = DHUtils.dhSecret(keyPair.getPrivateKey(), clientPublicKey);
 		

@@ -7,6 +7,6 @@
 	<classpathentry kind="lib" path="../lib/shared/bcprov-ext-jdk15on-160.jar"/>
 	<classpathentry kind="lib" path="../lib/shared/bcprov-jdk15on-160.jar"/>
 	<classpathentry kind="lib" path="../lib/server/servlet-api-3.1.jar"/>
-	<classpathentry kind="lib" path="../lib/server/guava-22.0.jar"/>
+	<classpathentry kind="lib" path="../lib/shared/guava-22.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

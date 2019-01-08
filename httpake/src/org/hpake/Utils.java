@@ -60,16 +60,24 @@ public class Utils
 	}
 	
 	/**
-	 * Decodes the given base64 string to big-endian bytes interpreted as an integer.  
+	 * Decodes the given base64 string to big-endian bytes interpreted as an unsigned integer.  
 	 * @param base64String the input string
 	 * @return the resultant integer
 	 * @throws HttPakeException if the string could not be decoded
 	 */
-	public static BigInteger decodeBase64(String base64String) throws HttPakeException
+	public static BigInteger decodeBase64Unsigned(String base64String) throws HttPakeException
 	{
 		try
 		{
-			return new BigInteger(Base64.decode(base64String));
+			
+			byte[] bytes = Base64.decode(base64String);
+			if(bytes.length >= 1 && (bytes[0]&0x80) == 0x80)
+			{
+				byte[] newBytes = new byte[bytes.length+1];
+				System.arraycopy(bytes, 0, newBytes, 1, bytes.length);
+				bytes = newBytes;
+			}
+			return new BigInteger(bytes);
 		}
 		catch(IllegalArgumentException e)
 		{

@@ -16,14 +16,18 @@ import javax.servlet.DispatcherType;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.bouncycastle.util.encoders.Base64;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.hpake.DHPublicKeyDTO;
 import org.hpake.HttPakeException;
+import org.hpake.Utils;
 import org.hpake.examples.client.HttPakeClient;
 import org.hpake.examples.client.HttPakeClient.AuthenticatedInfo;
 import org.hpake.examples.client.RetryException;
 import org.hpake.examples.client.UserCredentialInput;
 import org.hpake.examples.servlet.HttPakeAuthFilter;
+import org.hpake.protocol.Constants;
 
 /**
  * Tests for HttPake.
@@ -35,6 +39,23 @@ public class TestMain
 	private static final String urlPrefix = "http://localhost:8080";
 	private static final Map<String,Object> passwordMap = createPasswordMap();
 	
+	
+	public static void main(String[] args) throws Exception 
+	{
+		testPubicKeySynchronization();
+		runSystemTests();
+	}
+	
+	private static void testPubicKeySynchronization()
+	{
+		// two bytes with all bits set.
+		byte data[] = new byte[2];
+		data[0] =  -1;
+		data[1] =  -1;
+		
+		testAssert(Utils.decodeBase64Unsigned(Base64.toBase64String(data)).longValue() == 65535L);
+	}
+	
 	private static void setUpInitialContext() throws Exception
 	{
 		System.setProperty(Context.INITIAL_CONTEXT_FACTORY, "org.eclipse.jetty.jndi.InitialContextFactory");
@@ -43,7 +64,7 @@ public class TestMain
 		ic.bind(org.hpake.examples.servlet.HttPakeAuthFilter.PASSWORD_FUNCTION, (Function<String, Object>)passwordMap::get);
 	}
 	
-	public static void main(String[] args) throws Exception 
+	private static void runSystemTests() throws Exception
 	{
 		setUpInitialContext();
 		Server server = new Server(8080);
@@ -69,6 +90,7 @@ public class TestMain
 		{
 			server.stop();
 		}
+		
 	}
 	
 	/**

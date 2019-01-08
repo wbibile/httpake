@@ -5,6 +5,7 @@
 	<classpathentry kind="lib" path="../lib/shared/bcpkix-jdk15on-160.jar"/>
 	<classpathentry kind="lib" path="../lib/shared/bcprov-ext-jdk15on-160.jar"/>
 	<classpathentry kind="lib" path="../lib/shared/bcprov-jdk15on-160.jar"/>
+	<classpathentry kind="lib" path="../lib/shared/guava-22.0.jar"/>
 	<classpathentry kind="lib" path="../lib/client/httpclient/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="../lib/client/httpclient/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="../lib/client/httpclient/fluent-hc-4.5.6.jar"/>

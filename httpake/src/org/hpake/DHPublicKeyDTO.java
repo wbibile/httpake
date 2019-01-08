@@ -1,6 +1,6 @@
 package org.hpake;
 
-import static org.hpake.Utils.decodeBase64;
+import static org.hpake.Utils.decodeBase64Unsigned;
 import static org.hpake.Utils.encodeBase64;
 
 import java.math.BigInteger;
@@ -52,9 +52,9 @@ public class DHPublicKeyDTO
 		{
 			throw new HttPakeException("Unable to parse input public key.");
 		}
-		BigInteger p = decodeBase64(parts[0]);
-		BigInteger g = decodeBase64(parts[1]);
-		BigInteger y = decodeBase64(parts[2]);
+		BigInteger p = decodeBase64Unsigned(parts[0]);
+		BigInteger g = decodeBase64Unsigned(parts[1]);
+		BigInteger y = decodeBase64Unsigned(parts[2]);
 		return new DHPublicKeyDTO(p,g,y);
 	}
 	
