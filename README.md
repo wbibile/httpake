@@ -13,7 +13,7 @@ Features
     * DHE (Diffie-Hellman key Exchange)
     * HMAC_SHA256 subject signatures 
     * 256-bit KDF (Key Derivation Function) based on HMAC_SHA256
-* Possibility of extending to use AES encryption, with a suitable block cypher mode of operation such as CBC.
+* Possibility of extending to use AES encryption, with a suitable block cipher mode of operation such as CBC.
 * Client/server mutual authentication  
     * This improves resilience against phishing attacks as, both parties must know the password
 * Password is never sent over the wire (not even a hash of the password)
