@@ -10,15 +10,15 @@ Features
 
 * HTTP authentication scheme based on PAKE (Password Authenticated Key Exchange)
 * Built on top of reliable cryptographic techniques 
-** DHE (Diffie-Hellman key Exchange)
-** HMAC_SHA256 subject signatures 
-** 256-bit KDF (Key Derivation Function) based on HMAC_SHA256
+    * DHE (Diffie-Hellman key Exchange)
+    * HMAC_SHA256 subject signatures 
+    * 256-bit KDF (Key Derivation Function) based on HMAC_SHA256
 * Possibility of extending to use AES encryption, with a suitable block cypher mode of operation such as CBC.
 * Client/server mutual authentication  
-** This improves resilience against phishing attacks as, both parties must know the password
+    * This improves resilience against phishing attacks as, both parties must know the password
 * Password is never sent over the wire (not even a hash of the password)
-** Improved resistance to static brute-force/dictionary attacks 
-** Minimizes the danger of using relatively simple passwords
+    * Improved resistance to static brute-force/dictionary attacks 
+    * Minimizes the danger of using relatively simple passwords
 * Secure HTTP session, request and, response identifiers 
 
 Project structure
@@ -50,4 +50,4 @@ lib/server:
 Contains libraries used exclusively the httpake-server project 
 
 lib/test:
-Contains libraries used exclusively by the ìtestî project 
+Contains libraries used exclusively by the ‚Äútest‚Äù project 
