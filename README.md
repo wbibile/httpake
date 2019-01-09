@@ -1,5 +1,5 @@
-HttPake Cononical repository
-============================
+HttPake 
+=======
 
 HttPake is a HTTP authentication scheme, it is pronounced "HTTP pack". This repository contains multiple Java projects 
 which, includes an example HTTP client and, a servlet filter for handling HttPake authentication.
