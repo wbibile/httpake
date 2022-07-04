@@ -3,8 +3,7 @@
 HttPake 
 =======
 
-HttPake is a HTTP authentication scheme, it is pronounced "HTTP pack". This repository contains multiple Java projects 
-which, includes an example HTTP client and, a servlet filter for handling HttPake authentication.
+HttPake is a prototype HTTP authentication scheme to use Password Authenticated Key Exchange (PAKE) to authenticate users.  The current implementation uses raw Diffie-Hellman, due to weakness in security this will be cahenged to use a more secure PAKE protocol such as SRP (Secure Remote Password),
 
 
 Features
